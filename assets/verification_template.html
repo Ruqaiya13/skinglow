@@ -1,0 +1,37 @@
+<!-- verification_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Verify Your Email - Skinglow</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 10px; padding: 30px; }
+        .header { text-align: center; background: #914D74; color: white; padding: 20px; border-radius: 10px 10px 0 0; }
+        .code { background: #f8f8f8; padding: 20px; text-align: center; font-size: 32px; font-weight: bold; color: #914D74; margin: 20px 0; }
+        .footer { text-align: center; color: #666; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Skinglow</h1>
+        <h2>Email Verification</h2>
+    </div>
+
+    <p>Hello {{user_name}},</p>
+
+    <p>Please use the following verification code to complete your login:</p>
+
+    <div class="code">{{verification_code}}</div>
+
+    <p>This code will expire in 10 minutes.</p>
+
+    <p>If you didn't request this verification, please ignore this email.</p>
+
+    <div class="footer">
+        <p>Thank you,<br>The Skinglow Team</p>
+    </div>
+</div>
+</body>
+</html>

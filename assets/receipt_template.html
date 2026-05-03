@@ -1,0 +1,80 @@
+<!-- receipt_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+    .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { text-align: center; border-bottom: 2px solid #914D74; padding-bottom: 20px; margin-bottom: 30px; }
+    .logo { color: #914D74; font-size: 24px; font-weight: bold; }
+    .section { margin-bottom: 30px; }
+    .section-title { color: #914D74; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-bottom: 15px; }
+    .order-summary { width: 100%; border-collapse: collapse; }
+    .order-summary td { padding: 8px 0; border-bottom: 1px solid #eee; }
+    .order-summary .total { font-weight: bold; border-top: 2px solid #914D74; }
+    .address-box { background: #f9f9f9; padding: 15px; border-radius: 5px; }
+    .footer { text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 12px; }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">Skinglow</div>
+        <h1>Order Confirmation</h1>
+        <p>Thank you for your purchase!</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Order Details</h2>
+        <p><strong>Order Number:</strong> {{order_number}}</p>
+        <p><strong>Order Date:</strong> {{order_date}} at {{order_time}}</p>
+        <p><strong>Payment Method:</strong> {{payment_method}}</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Order Items</h2>
+        <table class="order-summary" width="100%">
+            {{{order_items}}}
+            <tr>
+                <td>Subtotal</td>
+                <td align="right">{{subtotal}}</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td align="right">{{tax}}</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td align="right">{{shipping}}</td>
+            </tr>
+            <tr class="total">
+                <td><strong>Total</strong></td>
+                <td align="right"><strong>{{total}}</strong></td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="display: flex; gap: 20px;">
+        <div class="section" style="flex: 1;">
+            <h2 class="section-title">Shipping Address</h2>
+            <div class="address-box">
+                {{{shipping_address}}}
+            </div>
+        </div>
+
+        <div class="section" style="flex: 1;">
+            <h2 class="section-title">Billing Address</h2>
+            <div class="address-box">
+                {{{billing_address}}}
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>If you have any questions, contact us at {{company_email}}</p>
+        <p>&copy; 2024 {{company_name}}. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>

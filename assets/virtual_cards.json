@@ -1,0 +1,36 @@
+{
+  "virtualCards": {
+    "card_001": {
+      "cardNumber": "4300000300280009",
+      "expiryDate": "12/30",
+      "cvv": "323",
+      "cardHolderName": "Ruqaiya Khalil",
+      "assignedBalance": 150000.00,
+      "isActive": true
+    },
+    "card_002": {
+      "cardNumber": "4200598447666074",
+      "expiryDate": "06/26",
+      "cvv": "456",
+      "cardHolderName": "Sara Mohammed",
+      "assignedBalance": 0.00,
+      "isActive": true
+    },
+    "card_003": {
+      "cardNumber": "4000087699954454",
+      "expiryDate": "01/23",
+      "cvv": "789",
+      "cardHolderName": "Noor Khaled",
+      "assignedBalance": 500.00,
+      "isActive": false
+    },
+    "card_004": {
+      "cardNumber": "4999000654444877",
+      "expiryDate": "08/28",
+      "cvv": "321",
+      "cardHolderName": "Fatima Ali",
+      "assignedBalance": 5.00,
+      "isActive": true
+    }
+  }
+}

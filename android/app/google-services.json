@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "661442034546",
+    "firebase_url": "https://skinglow-80315-default-rtdb.firebaseio.com",
+    "project_id": "skinglow-80315",
+    "storage_bucket": "skinglow-80315.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661442034546:android:d3641319f62706449bbbeb",
+        "android_client_info": {
+          "package_name": "com.example.skinglow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661442034546-u361eg7ooe6c1o6qg02cp9dehbkqtknv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skinglow",
+            "certificate_hash": "95e10b60bedcabe8e4992132da46bcc3bf10b2a1"
+          }
+        },
+        {
+          "client_id": "661442034546-qldjqsns8f5i9m35kkjprvm945ug3p42.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN6GJn0CO-zVv3Hmfy6uU9A6Ymq-GhKDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661442034546-qldjqsns8f5i9m35kkjprvm945ug3p42.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
